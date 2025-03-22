@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1550px;
+  height: 100vh;
+  font-family: "orbitron";
+  background-image: url(../img/MetaV\ _\ Website.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 43px 133px 94px 133px;
+}
+
+nav .logo {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  line-height: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  font-family: "Orbitron";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: lightgreen;
+}
+nav .checkbtn {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+nav #check {
+  display: none;
+}
+@media (max-width: 768px) {
+  nav .checkbtn {
+    display: block;
+    order: 1;
+    margin-right: 20px;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  nav ul li {
+    margin: 20px 0;
+  }
+  nav ul li a {
+    font-size: 40px;
+  }
+  nav #check:checked ~ ul {
+    right: 0;
+  }
+}
+
+.section-1 {
+  height: 568px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 133px 116px 133px;
+}
+.section-1 .text h1 {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 68px;
+  color: white;
+}
+.section-1 .text h1 span {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 72px;
+  background: linear-gradient(45deg, rgb(248, 108, 248), rgb(100, 206, 245));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-1 .text p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  margin-bottom: 48px;
+}
+.section-1 .text .btn {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.section-1 .text .btn button:nth-child(1) {
+  width: 173px;
+  height: 54px;
+  border-radius: 5px;
+  padding: 12px 14px 12px 14px;
+  background: linear-gradient(97.16deg, #d10ed1 12.04%, #10a3da 81.84%);
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.section-1 .text .btn button:nth-child(2) {
+  width: 173px;
+  height: 54px;
+  border-radius: 5px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(45deg, rgb(248, 108, 248), rgb(100, 206, 245));
+     border-image: linear-gradient(45deg, rgb(248, 108, 248), rgb(100, 206, 245));
+  border-image-slice: 1;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  background: transparent;
+  color: #ffffff;
+}
+.section-1 .text .price {
+  display: flex;
+  gap: 68px;
+}
+.section-1 .text .price h1 {
+  font-family: "Orbitron";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.section-1 .text .price p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.section-2 {
+  display: flex;
+  gap: 154px;
+  align-items: center;
+  margin-left: 118px;
+}
+.section-2 div h1 {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  color: white;
+}
+.section-2 div h1 span {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  background: linear-gradient(97.16deg, #f86cf8 12.04%, #64cef5 81.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-2 div p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  margin-bottom: 48px;
+}
+.section-2 div button {
+  width: 137px;
+  height: 44px;
+  border-radius: 5px;
+  background: linear-gradient(97.16deg, #d10ed1 12.04%, #10a3da 81.84%);
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.section-3 {
+  margin-top: 166px;
+}
+.section-3 .text {
+  width: 602px;
+  height: 114px;
+  margin-left: 418px;
+}
+.section-3 .text h1 {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  color: white;
+}
+.section-3 .text h1 span {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  background: linear-gradient(97.16deg, #f86cf8 12.04%, #64cef5 81.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-3 .text p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.section-3 .box {
+  width: 1198px;
+  height: 904px;
+  margin-left: 120px;
+  margin-top: 87px;
+  display: flex;
+  gap: 38px;
+  flex-wrap: wrap;
+}
+.section-3 .box .card {
+  width: 374px;
+  height: 434px;
+  background-color: #090823;
+  border-radius: 0px 25px 0px 25px;
+}
+.section-3 .box .card img {
+  width: 335px;
+  height: 217px;
+  margin-top: 18px;
+  margin-left: 19px;
+}
+.section-3 .box .card h2 {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 23px;
+  margin-left: 19px;
+  color: #ffffff;
+}
+.section-3 .box .card p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-top: 8px;
+  margin-left: 19px;
+}
+.section-3 .box .card span {
+  margin-top: 28px;
+  margin-left: 19px;
+  display: flex;
+  gap: 13px;
+}
+.section-3 .box .card span button:nth-child(1) {
+  width: 103px;
+  height: 36px;
+  border-radius: 5px;
+  background: linear-gradient(97.16deg, #d10ed1 12.04%, #10a3da 81.84%);
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+.section-3 .box .card span button:nth-child(2) {
+  width: 122px;
+  height: 36px;
+  border-radius: 5px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(45deg, rgb(248, 108, 248), rgb(100, 206, 245));
+     border-image: linear-gradient(45deg, rgb(248, 108, 248), rgb(100, 206, 245));
+  border-image-slice: 1;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section-4 {
+  margin-top: 186px;
+}
+.section-4 .text {
+  width: 561px;
+  height: 116px;
+  margin-left: 418px;
+  text-align: center;
+}
+.section-4 .text h1 {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  color: white;
+}
+.section-4 .text h1 span {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  background: linear-gradient(97.16deg, #f86cf8 12.04%, #64cef5 81.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-4 .text p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-top: 8px;
+  margin-left: 19px;
+  text-align: center;
+  margin-top: 16px;
+}
+.section-4 .box1 {
+  width: 1182px;
+  height: 650px;
+  border-radius: 25px;
+  background-image: url(../img/metaverse\ 1\ \(1\).png);
+  margin-left: 118px;
+  margin-top: 65px;
+}
+.section-4 .box1 .img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding-top: 232px;
+  margin-left: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-4 .box1 .card {
+  margin-top: 300px;
+  width: 100%;
+  height: 148px;
+  border: 0px 0px 25px 25px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+}
+.section-4 .box1 .card h1 {
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-top: 44px;
+  margin-left: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 443px;
+  background: #090823;
+  display: flex;
+  padding-left: 149px;
+  padding-top: 104px;
+  gap: 82px;
+  margin-top: 224px;
+}
+.footer .footer-logo h1 {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  background: linear-gradient(97.16deg, #f86cf8 12.04%, #64cef5 81.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+.footer .footer-logo p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer .links h1 {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+.footer .links p {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.footer .links div {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 21px;
+}
+.footer .links div i {
+  color: #ffffff;
+  font-size: 35px;
+}/*# sourceMappingURL=style.css.map */
